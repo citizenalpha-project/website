@@ -1,0 +1,12 @@
+<ul class="literature">
+    {{ $data := sort $.Site.Data.literature "title" "asc" }}
+    {{ range $data }}
+    <li>
+        <strong>{{ .title }}</strong> von {{ .author }}<br>
+        {{ with .isbn }}
+        ISBN: {{ . }}<br>
+        {{ end }}
+        Beendet am: {{ time.Format "02.01.2006" .finished }}
+    </li>
+    {{ end }}
+</ul>
