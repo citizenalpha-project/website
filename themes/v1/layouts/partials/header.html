@@ -1,2 +1,3 @@
-<h1>{{ site.Title }}</h1>
+<em><a href="/">{{ lower .Site.Title }}</a></em>
+
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
