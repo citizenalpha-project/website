@@ -1,0 +1,70 @@
+- name: Debian GNU/Linux
+  description: A Linux distribution (operating system) composed of free and open-source software and optionally non-free firmware or software developed by the community-supported Debian Project. Used as Server OS.
+  homepage: "https://www.debian.org/"
+
+- name: GitHub
+  description: A online developer platform that allows developers to create, store, manage and share their code.
+  homepage: "https://github.com/"
+
+- name: Git
+  description: A free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+  homepage: "https://git-scm.com/"
+  repo: "https://git.kernel.org/pub/scm/git/git.git"
+
+- name: mailbox.org
+  description: ad-free, encrypted and privacy-friendly e-mail, cloud storage, online office and video conferencing from Germany.
+  homepage: "https://mailbox.org/en/"
+
+- name: INWX
+  description: Independant DNS registrar based in EU.
+  homepage: "https://www.inwx.de/en"
+
+- name: Hetzner Cloud + DNS
+  description: Server provider based in Germany.
+  homepage: "https://www.hetzner.com/cloud/"
+
+- name: Terraform
+  description: A tool that codifies cloud APIs into declarative configuration files to provision and manage resources in any cloud or data center.
+  homepage: "https://www.terraform.io/"
+  repo: "https://github.com/hashicorp/terraform"
+
+- name: Ansible
+  description: An open source IT automation engine that automates provisioning, configuration management, application deployment, orchestration, and many other IT processes.
+  homepage: "https://www.ansible.com/"
+  repo: "https://github.com/ansible/ansible"
+
+- name: Hugo
+  description: An open-source tool for creating websites with blistering speed and robust content management.
+  homepage: "https://gohugo.io/"
+  repo: "https://github.com/gohugoio/hugo"
+
+- name: Podman
+  description: A tool to manage containers, pods, and images on your local environment. It is fast, light, secure, compatible, and Kubernetes ready.
+  homepage: "https://podman.io/"
+  repo: "https://github.com/containers/podman"
+
+- name: Caddy
+  description: CFast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS.
+  homepage: "https://caddyserver.com/"
+  repo: "https://github.com/caddyserver/caddy"
+
+- name: Chasquid
+  description: Chasquid is an SMTP (email) server with a focus on simplicity, security, and ease of operation.
+  homepage: "https://blitiri.com.ar/p/chasquid/"
+  repo: "https://blitiri.com.ar/git/r/chasquid/"
+
+- name: Offen
+  description: Fair, transparent, leightweigt, privacy-friendly and open-source web analytics.
+  homepage: "https://www.offen.dev/"
+  repo: "https://github.com/offen/offen"
+
+- name: Lynx
+  description: A Fast, Secure and Reliable Terraform Backend, Set up in Minutes.
+  repo: "https://github.com/Clivern/Lynx"
+  homepage: "https://lynx.clivern.com/"
+
+- name: Borg Backup
+
+- name: BorgBase
+
+- name: Renovate Bot

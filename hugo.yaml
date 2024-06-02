@@ -29,7 +29,7 @@ menus:
       weight: 60
 
     - name: Software
-      pageRef: /software-services
+      pageRef: /software
       weight: 70
 
     # - name: Über uns

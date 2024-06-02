@@ -1,0 +1,17 @@
+<ul class="software">
+    {{ $data := sort $.Site.Data.software_services "name" "asc" }}
+    {{ range $data }}
+    <li>
+        <strong>{{ .name }}</strong><br>
+        <span>{{ .description }}</span><br>
+        <ul>
+            {{ with .homepage }}
+                <li><a href="{{ . | safeURL }}">Homepage</a></li>
+            {{ end }}
+            {{ with .repo }}
+                <li><a href="{{ . |safeURL }}">Repository</a></li>
+            {{ end }}
+        </ul>
+    </li>
+    {{ end }}
+</ul>
