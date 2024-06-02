@@ -1,0 +1,18 @@
+menus:
+  main:
+    - name = 'Home'
+      pageRef = '/'
+      weight = 10
+
+    - name = 'Posts'
+      pageRef = '/posts'
+      weight = 20
+
+    - name = 'Tags'
+      pageRef = '/tags'
+      weight = 30
+
+module:
+  hugoVersion:
+    extended: false
+    min: "0.116.0"
