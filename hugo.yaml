@@ -35,3 +35,8 @@ menus:
     - name: Über uns
       pageRef: /ueber-uns
       weight: 80
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.126.2"
