@@ -1,0 +1,16 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:hallo@citizenalpha.de
+Preferred-Languages: de, en
+Policy: https://citizenalpha.de/responsible-disclosure
+Encryption: https://keys.openpgp.org/vks/v1/by-fingerprint/FD5CC7C49AB917F0F92675A3A89508444E39C58D
+Canonical: https://citizenalpha.de/.well-known/security.txt
+Expires: 2025-01-02T13:37:00.000Z
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQT9XMfEmrkX8PkmdaOolQhETjnFjQUCZlyEfgAKCRColQhETjnF
+jQE8AQCAYY0OnCtcx8bG38+3hKdPKXySdntz0DFu/9Q6u8HWsAEAmhzETkBwFpSo
+FiaOtHhZeKzLQNBxAt+jU8aqT3FTBw8=
+=oyll
+-----END PGP SIGNATURE-----
