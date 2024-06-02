@@ -32,9 +32,9 @@ menus:
       pageRef: /software-services
       weight: 70
 
-    - name: Über uns
-      pageRef: /ueber-uns
-      weight: 80
+    # - name: Über uns
+    #   pageRef: /ueber-uns
+    #   weight: 80
 
 module:
   hugoVersion:
