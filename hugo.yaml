@@ -4,7 +4,7 @@ defaultContentLanguage: de
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
-languageCode: de-de
+languageCode: de
 theme: v1
 timeZone: Europe/Berlin
 title: citizen alpha
