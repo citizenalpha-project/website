@@ -9,11 +9,11 @@
             {{ partial "header.html" . }}
         </header>
 
-        <main>
+        <main class="mb-8">
             {{ block "main" . }}{{ end }}
         </main>
 
-        <footer>
+        <footer class="max-w-4xl mx-auto flex flex-col items-center">
             {{ partial "footer.html" . }}
         </footer>
     </body>

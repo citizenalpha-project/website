@@ -9,12 +9,12 @@
     {{ end }}
 </p>
 
-<nav>
-    <ul>
+<nav class="my-3">
+    <ul class="flex gap-4">
         {{ range .Site.Menus.footer }}
         <li><a href="{{ .URL }}">{{ .Name }}</a></li>
         {{ end }}
     </ul>
 </nav>
 
-<p>Crafted with <span>❤️</span> in Hamburg. Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+<p class="!text-base">Crafted with <span class="!text-sm">❤️</span> in Hamburg. Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
