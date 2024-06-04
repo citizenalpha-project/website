@@ -1,9 +1,5 @@
 @unocss;
 
-header {
-  @apply max-w-4xl mx-auto mb-4;
-}
-
 .main-menu {
   @apply my-8;
 }
@@ -25,10 +21,6 @@ footer a {
 }
 
 @screen sm {
-  header {
-    @apply flex flex-items-baseline justify-between;
-  }
-
   .main-menu {
     @apply my-0;
   }
