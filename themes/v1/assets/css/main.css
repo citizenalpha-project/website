@@ -9,7 +9,7 @@ header {
 }
 
 .main-menu li {
-  @apply my-2 mr-6 last:mr-0;
+  @apply my-2;
 }
 
 .main-menu a {
@@ -18,6 +18,10 @@ header {
 
 .active {
   @apply border-b-2;
+}
+
+footer a {
+  @apply underline text-blue-500;
 }
 
 @screen sm {
@@ -30,6 +34,6 @@ header {
   }
 
   .main-menu ul {
-    @apply flex;
+    @apply flex gap-6;
   }
 }
