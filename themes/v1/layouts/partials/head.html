@@ -17,3 +17,10 @@
 
 {{ partialCached "head/css.html" . }}
 <!-- {{ partialCached "head/js.html" . }} -->
+
+{{ if hugo.IsProduction }}
+    <script async src="https://offen.citizenalpha.de/script.js"
+        data-account-id="d5573aed-d858-4371-b256-b4c1e9a9b450"
+        data-locale="de"
+    ></script>
+{{ end }}
