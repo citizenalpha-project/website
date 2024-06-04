@@ -1,1 +1,35 @@
 @unocss;
+
+header {
+  @apply max-w-4xl mx-auto mb-4;
+}
+
+.main-menu {
+  @apply my-8;
+}
+
+.main-menu li {
+  @apply my-2 mr-6 last:mr-0;
+}
+
+.main-menu a {
+  @apply hover:border-b-2 border-stone-700;
+}
+
+.active {
+  @apply border-b-2;
+}
+
+@screen sm {
+  header {
+    @apply flex flex-items-baseline justify-between;
+  }
+
+  .main-menu {
+    @apply my-0;
+  }
+
+  .main-menu ul {
+    @apply flex;
+  }
+}
