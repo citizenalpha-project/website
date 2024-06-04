@@ -36,6 +36,15 @@ menus:
     #   pageRef: /ueber-uns
     #   weight: 80
 
+  footer:
+    - name: Impressum
+      pageRef: /impressum
+      weight: 10
+
+    - name: Datenschutz
+      pageRef: /datenschutz
+      weight: 20
+
 module:
   hugoVersion:
     extended: true

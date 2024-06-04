@@ -1,1 +1,20 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<p>
+    {{ if eq .Params.license "cc-by-sa-4.0" }}
+        Der Inhalt dieser Seite ist lizenziert unter
+        <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+        >CC BY-SA 4.0</a>, {{ .Site.Title }}
+    {{ else }}
+        Copyright © {{ now.Year }} {{ .Site.Title }}
+    {{ end }}
+</p>
+
+<nav>
+    <ul>
+        {{ range .Site.Menus.footer }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+    </ul>
+</nav>
+
+<p>Crafted with <span>❤️</span> in Hamburg. Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
