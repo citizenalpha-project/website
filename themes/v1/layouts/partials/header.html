@@ -1,3 +1,7 @@
-<em><a href="/">{{ lower .Site.Title }}</a></em>
+<em class="not-italic">
+    <a href="/" class="no-underline font-bold">
+        {{ .Site.Title }}
+    </a>
+</em>
 
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
