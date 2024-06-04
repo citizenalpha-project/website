@@ -1,10 +1,19 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+    <article class="prose mx-auto">
+        <h1>{{ .Title }}</h1>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        <p class="mb-12">
+            {{ $date := or .PublishDate .Date }}
+            <time id="publish_date" name="publish_date" datetime="{{ $date | time.Format "2006-01-02T15:04:05-07:00" }}">
+                {{ $date | time.Format "02.01.2006 15:04" }}</time>,
+            bearbeitet:
+            <time id="edit_date" name="edit_date" datetime="{{ .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}">
+                {{ .Lastmod | time.Format "02.01.2006 15:04" }}</time>,
+            <a href="https://github.com/citizenalpha-project/website/commits/main/content/{{ .File.Path }}">Versions Historie</a>
+        </p>
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        {{ .Content }}
+
+        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </article>
 {{ end }}
