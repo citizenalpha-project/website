@@ -25,6 +25,7 @@
         src="{{ $src }}"
         integrity="sha256-{{ resources.GetRemote $src | crypto.SHA256 }}"
         crossorigin="anonymous"
+        nonce="{{ print "{{ placeholder \"http.request.uuid\" }}" }}"
 
         data-account-id="d5573aed-d858-4371-b256-b4c1e9a9b450"
         data-locale="de"
