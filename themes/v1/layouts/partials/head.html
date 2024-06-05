@@ -19,7 +19,13 @@
 <!-- {{ partialCached "head/js.html" . }} -->
 
 {{ if hugo.IsProduction }}
-    <script async src="https://offen.citizenalpha.de/script.js"
+    {{ $src := "https://offen.citizenalpha.de/script.js" }}
+    <script
+        async
+        src="{{ $src }}"
+        integrity="sha256-{{ resources.GetRemote $src | crypto.SHA256 }}"
+        crossorigin="anonymous"
+
         data-account-id="d5573aed-d858-4371-b256-b4c1e9a9b450"
         data-locale="de"
     ></script>
