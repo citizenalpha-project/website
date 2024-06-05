@@ -20,10 +20,12 @@
 
 {{ if hugo.IsProduction }}
     {{ $src := "https://offen.citizenalpha.de/script.js" }}
+    {{ $tracking_script := resources.GetRemote $src }}
+    {{ $tracking_script := $tracking_script | resources.Fingerprint "sha256" }}
     <script
         async
         src="{{ $src }}"
-        integrity="sha256-{{ resources.GetRemote $src | crypto.SHA256 }}"
+        integrity="{{ $tracking_script.Data.Integrity }}"
         crossorigin="anonymous"
         nonce="{{ print "{{ placeholder \"http.request.uuid\" }}" }}"
 
