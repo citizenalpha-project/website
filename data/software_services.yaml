@@ -64,7 +64,12 @@
   homepage: "https://lynx.clivern.com/"
 
 - name: Borg Backup
+  description: A deduplicating backup program. Optionally, it supports compression and authenticated encryption.
+  homepage: "https://www.borgbackup.org/"
+  repo: "https://github.com/borgbackup/borg/"
 
 - name: BorgBase
+  description: Simple and Secure SaaS hosting for offsite backups via Borg Backup.
+  homepage: "https://www.borgbase.com/"
 
 - name: Renovate Bot
