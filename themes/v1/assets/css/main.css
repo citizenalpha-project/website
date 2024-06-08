@@ -40,6 +40,10 @@ footer a {
   @apply text-right;
 }
 
+.prose li {
+  @apply mb-4;
+}
+
 @screen sm {
   .main-menu {
     @apply my-0;
