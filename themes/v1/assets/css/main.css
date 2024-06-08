@@ -20,6 +20,26 @@ footer a {
   @apply underline text-blue-500;
 }
 
+.kosten {
+  @apply w-full;
+}
+
+.kosten th, .kosten td {
+  @apply border-1 py-2 px-4;
+}
+
+.kosten thead {
+  @apply bg-stone-100 text-left;
+}
+
+.kosten tbody td:last-child {
+  @apply text-right;
+}
+
+.kosten tbody tr:last-child td:first-child {
+  @apply text-right;
+}
+
 @screen sm {
   .main-menu {
     @apply my-0;
