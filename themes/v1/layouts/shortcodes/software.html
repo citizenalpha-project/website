@@ -4,12 +4,12 @@
     <li>
         <strong>{{ .name }}</strong><br>
         <span>{{ .description }}</span><br>
-        <ul class="list-none mt-0 p-0 flex gap-3">
+        <ul class="list-none m-0 p-0 flex gap-3">
             {{ with .homepage }}
-                <li><a href="{{ . | safeURL }}">Homepage</a></li>
+                <li class="!m-0"><a href="{{ . | safeURL }}">Homepage</a></li>
             {{ end }}
             {{ with .repo }}
-                <li><a href="{{ . |safeURL }}">Repository</a></li>
+                <li class="!m-0"><a href="{{ . |safeURL }}">Repository</a></li>
             {{ end }}
         </ul>
     </li>
