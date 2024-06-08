@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="max-w-prose mx-auto">
+    <h1 class="text-5xl font-bold mb-12">{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ range .Pages }}
+        <article>
+            <h1 class="text-2xl mb-2"><a href="{{ .RelPermalink }}" class="underline">{{ .LinkTitle }}</a></h1>
+
+            <p class="mb-2">
+                {{ $date := or .PublishDate .Date }}
+                <time id="publish_date" name="publish_date" datetime="{{ $date | time.Format " 2006-01-02T15:04:05-07:00" }}">
+                    {{ $date | time.Format "02.01.2006" }}
+                </time>
+            </p>
+
+            <p class="mb-8">
+                {{ .Summary }}
+            </p>
+        </article>
+    {{ end }}
+</div>
+{{ end }}
