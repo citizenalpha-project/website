@@ -10,6 +10,13 @@ timeZone: Europe/Berlin
 title: citizen alpha
 watch: true
 
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
+
 menus:
   main:
     - name: Posts
