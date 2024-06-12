@@ -6,6 +6,9 @@
         {{ with .isbn }}
         ISBN: {{ . }}<br>
         {{ end }}
+        {{ with .source }}
+        Quelle: <a href="{{ . }}">{{ . }}</a><br>
+        {{ end }}
         Beendet am: {{ time.Format "02.01.2006" .finished }}
     </li>
     {{ end }}
