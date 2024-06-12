@@ -1,4 +1,9 @@
-- title: "Unsere Welt neu denken: Eine Einladung"
-  author: Maja Göpel
-  isbn: 978-3-548-06466-6
-  finished: 2024-06-01
+# - title: "Unsere Welt neu denken: Eine Einladung"
+#   author: Maja Göpel
+#   isbn: 978-3-548-06466-6
+#   finished: 2024-06-01
+
+- title: How to Be an Expert in a Changing World
+  author: Paul Graham
+  source: https://paulgraham.com/ecw.html
+  finished: 2024-06-12
