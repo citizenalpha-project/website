@@ -5,8 +5,8 @@
     {{ .Content }}
 
     {{ range .Pages }}
-        <article>
-            <h1 class="text-2xl mb-2"><a href="{{ .RelPermalink }}" class="underline">{{ .LinkTitle }}</a></h1>
+        <article class="border-b-1 border-stone-200 last:border-0 py-5">
+            <h1 class="text-2xl mb-2"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h1>
 
             <p class="mb-2">
                 {{ $date := or .PublishDate .Date }}
@@ -15,8 +15,11 @@
                 </time>
             </p>
 
-            <p class="mb-8">
+            <p>
                 {{ .Summary }}
+                {{ if .Truncated }}
+                <a href="{{ .RelPermalink }}" class="underline text-blue-600">Mehr anzeigen...</a>
+                {{ end }}
             </p>
         </article>
     {{ end }}
