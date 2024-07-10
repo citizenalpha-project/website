@@ -76,6 +76,22 @@ footer a {
   @apply mb-0;
 }
 
+.toc a {
+  @apply underline
+}
+
+.toc ul ul {
+  @apply ml-5;
+}
+
+.toc li {
+  @apply my-1;
+}
+
+.loc li:last-child {
+  @apply mb-0;
+}
+
 @screen sm {
   .main-menu {
     @apply my-0;
