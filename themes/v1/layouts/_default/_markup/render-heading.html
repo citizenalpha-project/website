@@ -1,8 +1,8 @@
-<h{{ .Level }} id="{{ .Anchor }}" class="group">
+<h{{ .Level }} id="{{ .Anchor }}">
     {{ .Text | safeHTML }}
     <a
         href="#{{ .Anchor }}"
         title="Permalink zu {{ .Text | safeHTML }}"
-        class="opacity-0 group-hover:opacity-100"
-    >#</a>
+        class="no-underline text-75%"
+    >🔗</a>
 </h{{ .Level }}>

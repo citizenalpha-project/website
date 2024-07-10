@@ -44,6 +44,38 @@ footer a {
   @apply mb-4;
 }
 
+.toc a {
+  @apply underline
+}
+
+.toc ul ul {
+  @apply ml-5;
+}
+
+.toc li {
+  @apply my-1;
+}
+
+.loc li:last-child {
+  @apply mb-0;
+}
+
+.footnotes {
+  @apply mt-24;
+}
+
+.footnotes ol {
+  @apply list-decimal mt-8 pl-5;
+}
+
+.footnotes li {
+  @apply my-2;
+}
+
+.footnotes li:last-child {
+  @apply mb-0;
+}
+
 @screen sm {
   .main-menu {
     @apply my-0;
