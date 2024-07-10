@@ -26,7 +26,9 @@
             {{ end }}
         {{ end }}
 
-        {{ .Content }}
+        {{ $Content := .Content }}
+        {{ $Content = replace $Content "footnotes" "footnotes not-prose" }}
+        {{ $Content | safeHTML }}
 
         {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </article>
