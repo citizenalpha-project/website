@@ -101,3 +101,10 @@ footer a {
     @apply flex gap-6;
   }
 }
+
+@screen lg {
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}

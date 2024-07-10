@@ -19,5 +19,21 @@
         <footer class="max-w-4xl mx-auto flex flex-col items-center">
             {{ partial "footer.html" . }}
         </footer>
+
+        <button
+            id="scrollTopBtn"
+            title="Zum Anfang springen"
+            class="
+                z-100
+                bg-stone-300
+                px-3 py-2
+                rounded
+                fixed bottom-8 right-8
+                opacity-0
+                transform-translate-y-100px
+                transition-all-500
+            ">
+                Zum Anfang ⬆
+        </button>
     </body>
 </html>
