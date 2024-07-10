@@ -13,6 +13,19 @@
             · {{ .ReadingTime }}min
         </p>
 
+        {{ with .Fragments.Headings }}
+            {{ $firstLevel := index . 0 }}
+            {{ $numberOfHeadings := len $firstLevel.Headings }}
+
+            {{ if gt $numberOfHeadings 2 }}
+                <div class="not-prose toc bg-stone-200 rounded p-4 mb-12">
+                    <strong class="text-6 inline-block mb-4">Inhalt</strong>
+
+                    {{ $.TableOfContents }}
+                </div>
+            {{ end }}
+        {{ end }}
+
         {{ .Content }}
 
         {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
