@@ -7,8 +7,8 @@ draft: false
 
 | Position                     | Kosten      |
 | ---------------------------- | ----------- |
-| Domains (INWX)               | 4,82 €      |
+| Domains (INWX)               | 5,04 €      |
 | E-Mail Hosting (Mailbox.org) | 3,00 €      |
-| Server Hosting (Hetzner)     | 9,11 €      |
-| **Gesamt etwa**              | **16,93 €** |
+| Server Hosting (Hetzner)     | 8,35 €      |
+| **Gesamt etwa**              | **16,39 €** |
 {.kosten .not-prose}
