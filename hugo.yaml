@@ -55,4 +55,4 @@ menus:
 module:
   hugoVersion:
     extended: true
-    min: "0.126.2"
+    min: "0.136.5"
