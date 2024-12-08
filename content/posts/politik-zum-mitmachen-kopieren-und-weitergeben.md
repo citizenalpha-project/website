@@ -1,8 +1,9 @@
 ---
 title: Politik zum Mitmachen, Kopieren und Weitergeben – Warum wir auf offene Lizenzen setzen
 date: '2024-06-02T02:05:42+02:00'
-draft: true
+draft: false
 license: 'cc-by-sa-4.0'
+publishDate: '2024-12-08T14:24:00+02:00'
 ---
 
 Wenn wir Politik neu denken wollen, müssen wir auch neu denken, wie wir mit
