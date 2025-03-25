@@ -1,6 +1,8 @@
+---
+
 name: Build and deploy website
 
-on:
+'on':
   workflow_dispatch:
   push:
     branches:
@@ -8,39 +10,5 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
-
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: true
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: "0.126.2"
-          extended: true
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        run: |
-          install -m 600 -D /dev/null ~/.ssh/id_rsa
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
-          rsync -avzhc --delete --stats public/ deploy-website@soerver.citizenalpha.de:htdocs/
+    uses: flokoe/server/.github/workflows/reusable-hugo-build-deploy.yml@main
+    secrets: inherit
