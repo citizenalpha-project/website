@@ -19,17 +19,4 @@
 {{ partialCached "head/js.html" . }}
 
 {{ if hugo.IsProduction }}
-    {{ $src := "https://offen.citizenalpha.de/script.js" }}
-    {{ $tracking_script := resources.GetRemote $src }}
-    {{ $tracking_script := $tracking_script | resources.Fingerprint "sha256" }}
-    <script
-        async
-        src="{{ $src }}"
-        integrity="{{ $tracking_script.Data.Integrity }}"
-        crossorigin="anonymous"
-        nonce="{{ print "{{ placeholder \"http.request.uuid\" }}" }}"
-
-        data-account-id="d5573aed-d858-4371-b256-b4c1e9a9b450"
-        data-locale="de"
-    ></script>
 {{ end }}
